@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { useState } from "react";
 import Navigation from "./Navigation";
 import Home from './pages/Home'
+import Contact from "./pages/Contact";
 // import Apps from "./pages/Apps";
 
 export default function Header(){
@@ -16,7 +17,7 @@ export default function Header(){
           return <Home />;
         }
         if (currentPage === 'Contact') {
-          return <Home />;
+          return <Contact />;
         }
         return <Home />;
       };
