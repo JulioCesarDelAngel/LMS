@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import logoImg from '../../logo.svg'
 
-export default function Bio () {
+export default function Home () {
     return (
         <Fragment>
             <h3 className="text-center">Baby Num</h3>

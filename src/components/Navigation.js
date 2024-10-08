@@ -4,7 +4,7 @@ export default function Navigation({currentPage, handlePageChange}){
 
 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="https://juliocesardelangel.github.io/LMS//">LMS</a>
+    <a className="navbar-brand" href="https://juliocesardelangel.github.io/LMS">LMS</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -23,6 +23,10 @@ export default function Navigation({currentPage, handlePageChange}){
         <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarColor02">
           <a className={currentPage === "Contact" ? "nav-link active" : "nav-link"} href="#Contact"
           onClick={()=> handlePageChange('Contact')}>Contacto</a>
+        </li>
+        <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarColor02">
+          <a className={currentPage === "Privacy" ? "nav-link active" : "nav-link"} href="#Privacy"
+          onClick={()=> handlePageChange('Privacy')}>Privacidad</a>
         </li>
       </ul>
     </div>
