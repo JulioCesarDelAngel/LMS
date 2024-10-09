@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 import Home from './pages/Home'
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
-// import Apps from "./pages/Apps";
+import Apps from "./pages/Apps";
 
 export default function Header(){
 
@@ -15,7 +15,7 @@ export default function Header(){
           return <Home />;
         }
         if (currentPage === 'Apps') {
-          return <Home />;
+          return <Apps />;
         }
         if (currentPage === 'Contact') {
           return <Contact />;
