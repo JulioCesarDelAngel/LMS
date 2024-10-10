@@ -18,8 +18,7 @@ export default function Contact(){
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setUserFormData({ ...userFormData, [name]: value });
-        console.log(name,value);
-        console.log('el email',userFormData.email);
+        // console.log(name,value);
       };
 
 
