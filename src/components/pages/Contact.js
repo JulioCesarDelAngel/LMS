@@ -2,7 +2,8 @@ import React, { useState , useEffect} from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact(){
-    const formId = process.env.REACT_APP_FORMSPREE_ID || "mjkvbvjj";    
+    //const formId = process.env.REACT_APP_FORMSPREE_ID || "mjkvbvjj";    
+    const formId = "mjkvbvjj";    
     const [state, handleSubmit] = useForm({formId});
     const [userFormData, setUserFormData] = useState({ email: '', message: '' });
     
