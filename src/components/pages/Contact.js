@@ -1,16 +1,20 @@
-import React, { useState , useEffect} from 'react';
+import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import { constants } from "../../Data/constants";
 
 export default function Contact(){
-    //const formId = process.env.REACT_APP_FORMSPREE_ID || "mjkvbvjj";    
-    const formId = "mjkvbvjj";    
-    const [state, handleSubmit] = useForm({formId});
+    
+    //const formId = "666"; // || process.env.REACT_APP_FORMSPREE_ID ;         
+
+    const data = constants[0];
+    const [state, handleSubmit] = useForm(data.formid);
     const [userFormData, setUserFormData] = useState({ email: '', message: '' });
     
     // useEffect(() => {
     //     console.log('DeBuggsBunny:', userFormData);
     //   }, [userFormData]);
-
+    
+    
 
     if (state.succeeded) {
         return <p>Gracias por contactarnos!</p>;
@@ -19,7 +23,7 @@ export default function Contact(){
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setUserFormData({ ...userFormData, [name]: value });
-        // console.log(name,value);
+         
       };
 
 
